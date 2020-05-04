@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font: normal 16pt arial;
+    line-height: 40px;
+    text-align: center;
+}
+h1 {
+    background-color: rgba(0, 143, 252, 0.729);
+}
+section {
+    background-color: rgb(52, 52, 52);
+    color: white;
+    border-radius: 15px;
+    margin: auto;
+    width: 600px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.482);
+    padding: 5px;
+    
+    
+}
+
+
+    input {
+        font: normal 15pt arial;
+}
+
+    input#resultado {
+        background-color: rgb(48, 48, 48);
+        color: white;
+}
+
+div {
+    background-color: rgba(255, 0, 0, 0.427);
+}
+footer {
+    font-style: italic;
+    font-size: small;
+}
