@@ -28,6 +28,7 @@ section {
     input#resultado {
         background-color: rgb(48, 48, 48);
         color: white;
+        margin-top: 40px;
 }
 
 div {
@@ -36,4 +37,5 @@ div {
 footer {
     font-style: italic;
     font-size: small;
+    
 }
