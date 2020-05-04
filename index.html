@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dividend Yield</title>
+    <link rel="stylesheet" href="estilo_yield.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Cálculo de Yield!</h1>
+    </header>
+
+    <section>
+        <p> Dividendos pagos no último ano: <input type="number" placeholder="R$" name="num1" id="num1"> </p>
+
+        <p> Valor da Cota hoje: <input type="number" placeholder="R$" name="num2" id="num2"> </p>
+
+        <p> Dividend Yield: <input type="number" placeholder="%" step="0.010" name="resultado" id="resultado"> % </p>
+
+        <p><input type="button" value="Resultado" id="soma" onclick="somar()"></p>
+    </section>
+
+    <div id="resposta"></div>
+    <footer>
+        <p>&copy; GlaucoTavares </p>
+    </footer>
+
+    <script>
+
+        function somar() {
+            var resposta = window.document.querySelector('div#resposta')
+            var num1 = window.document.getElementById('num1')
+            var num2 = window.document.getElementById('num2')
+            var res = window.document.getElementById('resultado')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var s = (n1 / n2) * 100;
+            window.document.getElementById('resultado').value = s.toFixed(2)
+
+            // resposta bom ou ruim      
+            if (s < 6) {
+                resposta.innerHTML = 'Dividend Yield baixo!'
+
+            } else if (s < 10) {
+                resposta.innerHTML = 'Dividend Yield BOM!!!'
+
+            } else if (s => 10) {
+                resposta.innerHTML = 'Dividend Yield EXCELENTE!!!'
+            }
+        }
+    </script>
+
+</body>
+
+</html>
